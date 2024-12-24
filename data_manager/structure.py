@@ -15,7 +15,6 @@ def create_collection(name):
 
 
 def insert_document(collection_name, document):
-    """Додавання документа в колекцію (індексація слів за порядком)."""
     if collection_name not in collections:
         return f"Collection {collection_name} does not exist."
 
@@ -31,6 +30,8 @@ def insert_document(collection_name, document):
         word = word.lower()
         collection['index'][word].append((doc_id, idx))
 
+    # Діагностика
+    print(f"Inserted document {doc_id}: {document}")
     return f"Document has been added to {collection_name}."
 
 

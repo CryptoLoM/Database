@@ -24,7 +24,6 @@ def parse_command(command):
     return parts[0].lower(), parts[1], parts[2]
 
 
-
 def main():
     print("Welcome to the Text Collection Manager. Type 'exit' or 'quit' to end the program.")
     while True:

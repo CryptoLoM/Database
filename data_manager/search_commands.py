@@ -1,3 +1,6 @@
+import re
+from structure import collections
+
 def search(collection_name, query=None):
     """Пошук документів у колекції з підтримкою WHERE."""
     if not collection_name:
