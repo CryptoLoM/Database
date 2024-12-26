@@ -18,7 +18,7 @@ def parse_command(command):
     command = command.strip()
     parts = re.split(r"\s+", command, maxsplit=2)
     if len(parts) == 1:
-        return parts[0].lower(), "", ""  # Приведення команди до нижнього регістру
+        return parts[0].lower(), "", ""
     elif len(parts) == 2:
         return parts[0].lower(), parts[1], ""
     return parts[0].lower(), parts[1], parts[2]
